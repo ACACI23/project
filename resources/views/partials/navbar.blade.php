@@ -1,8 +1,8 @@
 <!-- navber -->
 
-<nav class="navbar navbar-expand-lg text-light bg-dark bg-gradient">
+<nav class="navbar navbar-expand-lg text-light" style="background-color: #1e3a8a;">
   <div class="container">
-    <a class="navbar-brand text-light" href="#">ACACI</a>
+    <a class="navbar-brand text-light" href="#">SupNet</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,7 +12,7 @@
           <a class="nav-link text-light active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" href="/about">About</a>
+          <a class="nav-link text-light active" aria-current="page" href="/supply">Supply</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light active" aria-current="page" href="/posts">Blog</a>

@@ -11,16 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('barang_masuks', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('username');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->date('tgl_masuk');
+            $table->integer('jml_masuk');
+            $table->integer('id_supplier');
             $table->timestamps();
+
+            // Relasi ke tabel barang
+            $table->unsignedInteger('id_barang')->references('id_barang')->on('barangs')->onDelete('cascade');
+
         });
+        
     }
 
     /**
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('barang_masuks');
     }
 };

@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(BarangSeeder::class);
+        $this->call(SupplierSeeder::class);
         // Create a user
         User::factory(3)->create();
 
